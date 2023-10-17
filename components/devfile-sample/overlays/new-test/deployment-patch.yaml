@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rorai-tenant/devfile-sample-1/devfile-sample@sha256:b5f41bd11cfdbd8118b20e86d67100003d35035556989792cf61ea1c885d7b50
+        name: my-nodejs
+        resources: {}
+status: {}
